@@ -1,0 +1,557 @@
+/* Default styles for larger screens */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+  
+  /* Style the "GitHub Works" button */
+  .btn-custom {
+    background-color: #007BFF; /* Customize the background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    text-decoration: none;
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  /* Style the logo */
+  .logo img {
+    vertical-align: middle; /* Center the image vertically */
+  }
+  #navbarCollapse {
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    /* Center the items vertically within the navbar */
+    list-style: none;
+    /* Remove the default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+    /* Adjust the horizontal spacing between navigation items */
+}
+
+.navbar-brand {
+    margin-right: 20px;
+    /* Add some space to the right of the brand logo */
+}
+
+.btn-custom {
+    /* Your button styles here */
+}
+
+#home .container .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: left;
+}
+
+#home .col-lg-6 {
+    flex: 0 0 50%;
+    /* The image takes up 50% of the width */
+    max-width: 50%;
+    padding: 0;
+}
+
+#home .col-lg-6 img {
+    width: 80%;
+    justify-content: center;
+    /* Make the image fill its container */
+    border-radius: 30px;
+}
+
+.typed-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    animation: typing 6s steps(40) infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#home .col-lg-6 h3,
+#home .col-lg-6 h1,
+#home .col-lg-6 h2,
+#home .col-lg-6 .typed-text,
+#home .col-lg-6 .d-flex {
+    padding: 30px;
+    /* Add spacing to the text content */
+}
+
+.d-flex.align-items-center.pt-5 a.btn.btn-primary {
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.d-flex.align-items-center.pt-5 a.btn.btn-primary:hover {
+    background-color: white;
+    color: blue;
+}
+
+/* Apply flexbox to the parent container to align items in a row */
+.d-flex.align-items-center.mb-5 {
+    display: flex;
+    flex-direction: row;
+    /* Make the items align horizontally */
+    align-items: center;
+    /* Vertically align the items */
+}
+
+/* Add a margin to separate "2" from the text */
+.years.flex-shrink-0.text-center.me-4 h1.display-1.mb-0 {
+    margin-right: 1rem;
+    /* Adjust the margin as needed */
+    font-size: 64px;
+}
+
+/* Adjust text alignment and margins for the description */
+h3.lh-base.mb-0 {
+    margin: 0;
+}
+
+.row.g-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row.g-5 .col-lg-6 {
+    flex: 0 0 48%;
+    /* Adjust the width as needed */
+}
+
+.row.g-5 .col-lg-6:last-child {
+    flex: 0 0 48%;
+    /* Adjust the width as needed */
+}
+
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: transparent;
+    color: blue;
+    /* Text color when not hovered */
+    border: 2px solid blue;
+    /* Blue border */
+    transition: all 0.3s;
+    /* Add smooth transition effect */
+    border-radius: 5px;
+
+    /* Hover effect */
+    &:hover {
+        background: blue;
+        /* Background color on hover */
+        color: white;
+        /* Text color on hover */
+    }
+}
+
+.text-primary {
+    color: blue;
+    /* Sets the text color to blue */
+}
+
+.border-end {
+    border-right: 2px solid black;
+    /* Adds a blue border to the right of the element */
+    padding-right: 10px;
+    /* Adds spacing to separate text from the border */
+}
+
+.text-primary.fw-bold {
+    font-weight: bold;
+    /* Makes the text bold */
+}
+
+/* Style for "Happy Clients" and "Projects Completed" headings */
+h3.text-primary {
+    color: black;
+    /* Set the text color to blue */
+    font-weight: bold;
+    /* Remove bold style */
+
+}
+
+/* Style for the "4" in both sections */
+h2.text-primary {
+    color: blue;
+    /* Set the text color to blue */
+    font-weight: bold;
+    /* Apply bold style */
+}
+
+/* Style the progress bars */
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    width: 75%;
+    margin: 0;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: right;
+    padding: 0.25rem;
+    font-weight: bold;
+}
+
+/* Customize progress bar colors */
+.progress-html .progress-bar {
+    background-color: #007bff;
+    width: 95%;
+}
+
+.progress-css .progress-bar {
+    background-color: #ffc107;
+    width: 85%;
+}
+
+.progress-php .progress-bar {
+    background-color: #dc3545;
+    width: 85%;
+}
+
+.progress-javascript .progress-bar {
+    background-color: #17a2b8;
+    width: 70%;
+}
+
+.progress-python .progress-bar {
+    background-color: #343a40;
+    width: 85%;
+}
+
+.progress-shell .progress-bar {
+    background-color: #fd7e14;
+    width: 80%;
+}
+
+.progress-mysql .progress-bar {
+    background-color: #20c997;
+    width: 75%;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.service-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    text-align: both;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.bg-icon {
+    margin-right: 15px;
+}
+
+.col-lg-6 .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm-6 {
+    flex-basis: 50%;
+}
+
+.contact-form {
+    background-color: #abbeb3;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contact-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #779e85;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    margin-top: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form {
+    display: flex;
+    align-items: stretch;
+    /* Adjust alignment as needed */
+}
+
+.contact-form-container {
+    flex: 1;
+    /* This div takes up half of the width */
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+}
+
+.footer-row img {
+    margin-right: 40px;
+    width: 80px;
+    height: 40px;
+}
+
+.person-container {
+    display: flex;
+}
+
+.person {
+    flex: 1;
+    text-align: center;
+}
+
+.person img {
+    border-radius: 30px;
+}
+/* Add this CSS to center the nav-list content and fix the page width */
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-right: 15px;
+}
+
+/* To make the page width 100% on smaller screens and computers */
+@media (max-width: 991px) {
+    .navbar {
+        width: 100%;
+    }
+}
+.typed-text {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    /* Media query for screens with a max width of 768px (tablets and smartphones) */
+    .typed-text {
+        font-size: 8px; /* Adjust the font size for smaller screens */
+        margin: 10px; /* Adjust the margin for smaller screens */
+        text-align: both; /* Change text alignment for better readability on small screens */
+    }
+}
+.h2-wrap {
+    width: 100%; /* Make sure the text takes the full width */
+    text-align: both; /* Center the text horizontally */
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+    .h2-wrap {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflowing text */
+        text-overflow: ellipsis; /* Add ellipsis (...) to indicate hidden text */
+    }
+}
+@media (max-width: 991px) {
+    .container-fluid.bg-light .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-lg-6 {
+        order: 2;
+        text-align:both;
+    }
+
+    .col-lg-6 img {
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+}
+@media (max-width: 767px) {
+    .col-lg-6.wow.fadeInUp[data-wow-delay="0.1s"] {
+        text-align: both;
+    }
+
+    .col-lg-6.wow.fadeInUp[data-wow-delay="0.1s"] > div.d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-lg-6.wow.fadeInUp[data-wow-delay="0.1s"] h3,
+    .col-lg-6.wow.fadeInUp[data-wow-delay="0.1s"] p {
+        text-align: both;
+        margin: 5px;
+    }
+
+    .col-lg-6.wow.fadeInUp[data-wow-delay="0.1s"] .years {
+        margin: 5px;
+    }
+
+    .col-lg-6.wow.fadeInUp[data-wow-delay="0.1s"] h5 {
+        margin: 5px;
+    }
+}
+@media (max-width: 767px) {
+    .tab-content .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-content .col-sm-6 {
+        width: 100%;
+        text-align: both;
+        margin-bottom: 20px;
+    }
+}
+
+/* Add this CSS to your styles.css file */
+@media (max-width: 767px) {
+    .col-lg-6 {
+        text-align: both;
+    }
+}
+/* Add this CSS to your styles.css file */
+@media (max-width: 767px) {
+    .row.g-5 {
+        flex-direction: column;
+    }
+    .col-lg-5.col-md-6 {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+        margin-top: 20px; /* Adjust this margin as needed */
+    }
+}
+@media (max-width: 767px) {
+    .person-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: both;
+    }
+    .person {
+        margin-bottom: 20px; /* Adjust this margin as needed */
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px; /* Optional padding for the content */
+    }
+}
+/* Media query for screens up to 768px (typical tablet size) */
+@media screen and (max-width: 768px) {
+    .typed-text h2 {
+        font-size: 8px; /* Reduce font size for smaller screens */
+    }
+}
+
+/* Media query for screens up to 480px (typical mobile phone size) */
+@media screen and (max-width: 480px) {
+    .typed-text h2 {
+        font-size: 8px; /* Further reduce font size for even smaller screens */
+    }
+}
