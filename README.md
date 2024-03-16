@@ -79,4 +79,4 @@ Thank you for visiting my personal website! Feel free to reach out if you have a
 
 [LinkedIn](https://www.linkedin.com/in/ntwaritaganzwa-denys-901194230/) | [Email](mailto:ntwaridenis@gmail.com) | [GitHub](https://github.com/dntwaritag)
 ```
-Here is the link to the project https://dntwaritag.io/My-Portfolio/
+Here is the link to the project https://dntwaritag.github.io/My-Portfolio/)https://dntwaritag.github.io/My-Portfolio/
